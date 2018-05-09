@@ -9,5 +9,5 @@ CXXFLAGS = -Wall -I$(INC_DIR) $(CXXFLAGS_ADD) $(NDEBUG) -pipe
 
 all: main
 
-main: main.cpp
-	g++ $(CXXFLAGS) -o $@ main.cpp
+main: main.cpp GaussQuad.cpp GaussQuad.hpp
+	g++ $(CXXFLAGS) -o $@ main.cpp GaussQuad.cpp

@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     int next_arg = 1;
-    int const method = argc>2 ? atoi(argv[next_arg++]) : LEGENDRE;
+    int const method = argc>2 ? atoi(argv[next_arg++]) : GQ_LEGENDRE;
     int const N = atoi(argv[next_arg++]);
     GaussQuad rule(method, N);
 

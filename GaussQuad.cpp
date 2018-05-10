@@ -13,12 +13,12 @@ GaussQuad::GaussQuad(int _method, int N) : m_x(N), m_w(N), method(_method)
     ArrayXd a(N), b(N);
     switch(_method)
     {
-        case HERMITE:
+        case GQ_HERMITE:
             k0 = pow(M_PI,-0.25);
             a.setZero();
             b = ArrayXd::LinSpaced(N,.5,N/2.0).sqrt();
             break;
-        case LEGENDRE: default:
+        case GQ_LEGENDRE: default:
             k0 = sqrt(0.5);
             a.setZero();
             for (int i = 1; i < N+1; i++) {

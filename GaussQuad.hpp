@@ -3,7 +3,7 @@
 
 #include <vector>
 
-enum {LEGENDRE = 0, HERMITE = 1};
+enum {GQ_LEGENDRE = 0, GQ_HERMITE = 1};
 
 class GaussQuad
 {

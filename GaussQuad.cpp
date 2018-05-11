@@ -7,7 +7,10 @@ using namespace Eigen;
 using namespace std;
 
 
-GaussQuad::GaussQuad(int _method, int N) : m_x(N), m_w(N), method(_method)
+GaussQuad::GaussQuad(int _method, int N)
+    : m_x(N)
+    , m_w(N)
+    , method(_method)
 {
     double k0;
     ArrayXd a(N), b(N);
